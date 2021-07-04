@@ -23,19 +23,19 @@ nodeGroups:
       instance-type: onDemand
     ssh: 
       publicKeyName: eks-learn
-  - name: scale-east1fa
-    instanceType: t3.large
-    desiredCapacity: 1
-    maxSize: 10
-    availabilityZones: ["us-east-1f", "us-east-1a"]
-    iam:
-      withAddonPolicies:
-        autoScaler: true
-    labels:
-      nodegroup-type: stateful-workload
-      instance-type: onDemand
-    ssh:
-      publicKeyName: eks-learn
+      #  - name: scale-east1fa
+      #instanceType: t3.large
+      #desiredCapacity: 1
+      # maxSize: 10
+      #availabilityZones: ["us-east-1f", "us-east-1a"]
+      #iam:
+      # withAddonPolicies:
+      # autoScaler: true
+      # labels:
+      # nodegroup-type: stateful-workload
+      #instance-type: onDemand
+      # ssh:
+      #publicKeyName: eks-learn
   - name: scale-spot
     desiredCapacity: 1
     maxSize: 10
